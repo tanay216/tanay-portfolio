@@ -1,57 +1,96 @@
 @import 'tailwindcss';
 
 @theme inline {
-  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
-  --font-display: 'Syne', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Barlow', ui-sans-serif, system-ui, sans-serif;
+  --font-barlow: 'Barlow', ui-sans-serif, system-ui, sans-serif;
+  --font-barlow-condensed: 'Barlow Condensed', ui-sans-serif, system-ui, sans-serif;
 
-  --color-background: hsl(258 28% 12%);
-  --color-foreground: hsl(45 20% 96%);
-  --color-card: hsl(258 24% 16%);
-  --color-card-foreground: hsl(45 20% 96%);
-  --color-primary: hsl(38 92% 55%);
-  --color-primary-foreground: hsl(258 28% 10%);
-  --color-secondary: hsl(258 18% 22%);
-  --color-secondary-foreground: hsl(45 15% 90%);
-  --color-muted: hsl(258 16% 20%);
-  --color-muted-foreground: hsl(258 8% 68%);
-  --color-accent: hsl(172 55% 42%);
-  --color-accent-foreground: hsl(258 28% 10%);
-  --color-destructive: hsl(0 72% 51%);
-  --color-border: hsl(258 14% 26%);
-  --color-input: hsl(258 14% 26%);
-  --color-ring: hsl(38 92% 55%);
+  --color-wix-ink: #281a39;
+  --color-wix-accent: #8c230b;
+  --color-wix-panel: #eeeaea;
+  --color-wix-cream: #f5f2ef;
+  --color-wix-sky: #d6efff;
+  --color-wix-sky-block: #c5dff0;
+  --color-wix-shadow: #745953;
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-
   html {
     scroll-behavior: smooth;
   }
 
   body {
-    @apply min-h-svh bg-background font-sans text-foreground antialiased;
-    background-image:
-      radial-gradient(ellipse 80% 50% at 50% -20%, hsl(258 40% 28% / 0.45), transparent),
-      radial-gradient(ellipse 60% 40% at 100% 50%, hsl(172 55% 42% / 0.08), transparent);
+    @apply m-0 min-h-svh bg-wix-cream font-barlow text-wix-ink antialiased;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.4;
   }
 
-  h1,
-  h2,
-  h3 {
-    font-family: var(--font-display);
-    @apply tracking-tight;
-  }
-
-  .font-display {
-    font-family: var(--font-display);
+  a {
+    color: inherit;
+    text-decoration: none;
   }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer components {
+  .wix-band {
+    background: linear-gradient(
+      90deg,
+      #c9e4f3 0%,
+      #d4e8f6 40%,
+      #e2ddf3 75%,
+      #e8e0f4 100%
+    );
+  }
+
+  .wix-hero-bg {
+    background-image: url('/images/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .wix-btn {
+    @apply flex w-full max-w-[430px] items-center justify-center rounded-[5px] border border-wix-ink bg-wix-panel text-center text-[14px] font-normal uppercase tracking-wide text-wix-ink;
+    min-height: 50px;
+    box-shadow:
+      rgb(116, 89, 83) 1px 1px 0 0,
+      rgb(116, 89, 83) 3px 3px 0 0,
+      rgb(116, 89, 83) 5px 5px 0 0,
+      rgb(116, 89, 83) 7px 7px 0 0,
+      rgb(116, 89, 83) 9px 9px 0 0;
+    transition: transform 0.15s ease;
+  }
+
+  .wix-btn:hover {
+    transform: translate(1px, 1px);
+  }
+
+  .wix-btn-hero {
+    box-shadow: none;
+    border: 1px solid #281a39;
+  }
+
+  .wix-page-title {
+    font-family: var(--font-barlow-condensed);
+    font-size: clamp(2.25rem, 4vw, 3.4375rem);
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--color-wix-ink);
+  }
+
+  .wix-section-title {
+    font-family: var(--font-barlow-condensed);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--color-wix-ink);
+  }
+
+  .wix-h1 {
+    font-family: var(--font-barlow-condensed);
+    font-size: clamp(2.5rem, 5vw, 3.4375rem);
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--color-wix-ink);
   }
 }

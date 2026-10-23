@@ -1,0 +1,57 @@
+[
+  {
+    "text": "Warbound on Steam!",
+    "color": "rgb(0, 0, 238)",
+    "backgroundColor": "rgb(238, 234, 234)",
+    "border": "0px solid rgb(40, 26, 57)",
+    "boxShadow": "rgb(116, 89, 83) 1px 1px 0px 0px, rgb(116, 89, 83) 3px 3px 0px 0px, rgb(116, 89, 83) 5px 5px 0px 0px, rgb(116, 89, 83) 7px 7px 0px 0px, rgb(116, 89, 83) 9px 9px 0px 0px",
+    "fontSize": "10px",
+    "fontFamily": "Arial, Helvetica, sans-serif",
+    "padding": "0px",
+    "borderRadius": "5px"
+  },
+  {
+    "text": "Play Tales of Zanthar!",
+    "color": "rgb(0, 0, 238)",
+    "backgroundColor": "rgb(238, 234, 234)",
+    "border": "0px solid rgb(40, 26, 57)",
+    "boxShadow": "rgb(116, 89, 83) 1px 1px 0px 0px, rgb(116, 89, 83) 3px 3px 0px 0px, rgb(116, 89, 83) 5px 5px 0px 0px, rgb(116, 89, 83) 7px 7px 0px 0px, rgb(116, 89, 83) 9px 9px 0px 0px",
+    "fontSize": "10px",
+    "fontFamily": "Arial, Helvetica, sans-serif",
+    "padding": "0px",
+    "borderRadius": "5px"
+  },
+  {
+    "text": "Play Frosty Cabin!",
+    "color": "rgb(0, 0, 238)",
+    "backgroundColor": "rgb(238, 234, 234)",
+    "border": "0px solid rgb(40, 26, 57)",
+    "boxShadow": "rgb(116, 89, 83) 1px 1px 0px 0px, rgb(116, 89, 83) 3px 3px 0px 0px, rgb(116, 89, 83) 5px 5px 0px 0px, rgb(116, 89, 83) 7px 7px 0px 0px, rgb(116, 89, 83) 9px 9px 0px 0px",
+    "fontSize": "10px",
+    "fontFamily": "Arial, Helvetica, sans-serif",
+    "padding": "0px",
+    "borderRadius": "5px"
+  },
+  {
+    "text": "Play Sumo Baby!",
+    "color": "rgb(0, 0, 238)",
+    "backgroundColor": "rgb(238, 234, 234)",
+    "border": "0px solid rgb(40, 26, 57)",
+    "boxShadow": "rgb(116, 89, 83) 1px 1px 0px 0px, rgb(116, 89, 83) 3px 3px 0px 0px, rgb(116, 89, 83) 5px 5px 0px 0px, rgb(116, 89, 83) 7px 7px 0px 0px, rgb(116, 89, 83) 9px 9px 0px 0px",
+    "fontSize": "10px",
+    "fontFamily": "Arial, Helvetica, sans-serif",
+    "padding": "0px",
+    "borderRadius": "5px"
+  },
+  {
+    "text": "Play Tales of Zanthar!",
+    "color": "rgb(0, 0, 238)",
+    "backgroundColor": "rgb(238, 234, 234)",
+    "border": "0px solid rgb(40, 26, 57)",
+    "boxShadow": "rgb(116, 89, 83) 1px 1px 0px 0px, rgb(116, 89, 83) 3px 3px 0px 0px, rgb(116, 89, 83) 5px 5px 0px 0px, rgb(116, 89, 83) 7px 7px 0px 0px, rgb(116, 89, 83) 9px 9px 0px 0px",
+    "fontSize": "10px",
+    "fontFamily": "Arial, Helvetica, sans-serif",
+    "padding": "0px",
+    "borderRadius": "5px"
+  }
+]
