@@ -1,4 +1,5 @@
 import { site } from '@/data/content'
+import { asset } from '@/lib/asset'
 
 export function SocialIcons({ className }: { className?: string }) {
   return (
@@ -6,12 +7,12 @@ export function SocialIcons({ className }: { className?: string }) {
       <ul className="flex items-center gap-4">
         <li>
           <a href={site.discord} target="_blank" rel="noreferrer" aria-label="Discord">
-            <img src="/images/discord.png" alt="" width={30} height={30} className="size-[30px]" />
+            <img src={asset('/images/discord.png')} alt="" width={30} height={30} className="size-[30px]" />
           </a>
         </li>
         <li>
           <a href={site.linkedIn} target="_blank" rel="noreferrer" aria-label="LinkedIn">
-            <img src="/images/linkedin.png" alt="" width={30} height={30} className="size-[30px]" />
+            <img src={asset('/images/linkedin.png')} alt="" width={30} height={30} className="size-[30px]" />
           </a>
         </li>
       </ul>
@@ -25,12 +26,12 @@ export function SocialIconsWithTwitter({ className }: { className?: string }) {
       <ul className="flex items-center gap-4">
         <li>
           <a href={site.discord} target="_blank" rel="noreferrer" aria-label="Discord">
-            <img src="/images/discord.png" alt="" width={30} height={30} className="size-[30px]" />
+            <img src={asset('/images/discord.png')} alt="" width={30} height={30} className="size-[30px]" />
           </a>
         </li>
         <li>
           <a href={site.linkedIn} target="_blank" rel="noreferrer" aria-label="LinkedIn">
-            <img src="/images/linkedin.png" alt="" width={30} height={30} className="size-[30px]" />
+            <img src={asset('/images/linkedin.png')} alt="" width={30} height={30} className="size-[30px]" />
           </a>
         </li>
         <li>

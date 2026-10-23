@@ -29,9 +29,9 @@ jobs:
 
       - name: Build
         env:
-          # For project sites (username.github.io/repo-name), set this in repo Variables
-          # or change vite.config.ts base to '/your-repo-name/'.
-          VITE_BASE_PATH: ${{ vars.VITE_BASE_PATH || '/' }}
+          # Project site: https://<user>.github.io/tanay-portfolio/
+          # Set the VITE_BASE_PATH repository variable to '/' for a custom domain or user site.
+          VITE_BASE_PATH: ${{ vars.VITE_BASE_PATH || '/tanay-portfolio/' }}
         run: npm run build
 
       - uses: actions/upload-pages-artifact@v3

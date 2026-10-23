@@ -2,15 +2,19 @@ import { DemoreelsSection } from '@/components/demoreels-section'
 import { SocialIcons } from '@/components/social-icons'
 import { WixButton } from '@/components/wix-button'
 import { site } from '@/data/content'
+import { asset } from '@/lib/asset'
 
 export function HomePage() {
   return (
     <>
-      <section className="wix-hero-bg">
+      <section
+        className="wix-hero-bg"
+        style={{ backgroundImage: `url(${asset('/images/hero-bg.png')})` }}
+      >
         <div className="mx-auto grid max-w-[1280px] gap-10 px-6 py-14 md:grid-cols-2 md:items-center md:px-10 md:py-20">
           <div className="flex justify-center md:justify-start">
             <img
-              src="/images/profile.jpg"
+              src={asset('/images/profile.jpg')}
               alt="Portrait of Tanay Jain"
               width={431}
               height={467}

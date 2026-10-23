@@ -1,3 +1,5 @@
+import { asset } from '@/lib/asset'
+
 export const site = {
   name: 'Tanay Jain',
   brand: 'TANAY JAIN | GAME AUDIO DESIGNER',
@@ -10,7 +12,7 @@ export const site = {
   linkedIn: 'https://www.linkedin.com/in/tanay-jain-185438259/',
   discord: 'https://discord.com/users/1052180983174156308',
   twitter: 'https://twitter.com/eigo_wav',
-  resumePath: '/resume.pdf',
+  resumePath: asset('/resume.pdf'),
   copyright: '© 2024 by Tanay Jain.',
 }
 
@@ -76,7 +78,7 @@ export const portfolioRows: PortfolioRow[] = [
     description:
       "I collaborated on a project in the Cozy Winter Jam where I worked with an awesome team of creatives and made music and sfx for a survival-shooter game called 'Frosty Cabin'.",
     cta: { label: 'Play Frosty Cabin!', href: 'https://zedzee.itch.io/frosty-cabin' },
-    media: { type: 'image', src: '/images/projects/frosty.jpg', alt: 'Frosty Cabin artwork' },
+    media: { type: 'image', src: asset('/images/projects/frosty.jpg'), alt: 'Frosty Cabin artwork' },
     mediaSide: 'left',
   },
   {
@@ -105,44 +107,44 @@ export const portfolioRows: PortfolioRow[] = [
 export const musicAlbum = {
   artist: 'Tanay',
   title: 'Pixel DBs',
-  cover: '/images/music/pixel-dbs.png',
+  cover: asset('/images/music/pixel-dbs.png'),
   coverAlt: 'Pixel DBs cover art, a pixel skull on a mint background',
   tracks: [
     {
       id: 'undercity',
       title: 'UnderCity [Dark Ambient OST]',
       duration: '01:36',
-      src: '/audio/undercity.mp3',
+      src: asset('/audio/undercity.mp3'),
     },
     {
       id: 'rainscars',
       title: 'RainScars [OST]',
       duration: '02:51',
-      src: '/audio/rainscars.mp3',
+      src: asset('/audio/rainscars.mp3'),
     },
     {
       id: 'land-of-broken-dreams',
       title: 'Land of Broken Dreams [Electronic Ambient]',
       duration: '01:34',
-      src: '/audio/land-of-broken-dreams.mp3',
+      src: asset('/audio/land-of-broken-dreams.mp3'),
     },
     {
       id: 'melancholy-dream',
       title: 'Melancholy Dream [OST]',
       duration: '03:06',
-      src: '/audio/melancholy-dream.mp3',
+      src: asset('/audio/melancholy-dream.mp3'),
     },
     {
       id: 'prologue',
       title: 'Prologue [Cinematic Trailer]',
       duration: '02:08',
-      src: '/audio/prologue.mp3',
+      src: asset('/audio/prologue.mp3'),
     },
     {
       id: 'garden-of-visions',
       title: 'Garden of Visions [Ambient]',
       duration: '01:25',
-      src: '/audio/garden-of-visions.mp3',
+      src: asset('/audio/garden-of-visions.mp3'),
     },
   ],
 } as const
