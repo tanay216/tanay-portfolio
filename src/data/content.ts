@@ -101,6 +101,52 @@ export const portfolioRows: PortfolioRow[] = [
   },
 ]
 
+/** Public 128 kbps streams from the Wix Music playlist "Pixel DBs". */
+export const musicAlbum = {
+  artist: 'Tanay',
+  title: 'Pixel DBs',
+  cover: '/images/music/pixel-dbs.png',
+  coverAlt: 'Pixel DBs cover art, a pixel skull on a mint background',
+  tracks: [
+    {
+      id: 'undercity',
+      title: 'UnderCity [Dark Ambient OST]',
+      duration: '01:36',
+      src: '/audio/undercity.mp3',
+    },
+    {
+      id: 'rainscars',
+      title: 'RainScars [OST]',
+      duration: '02:51',
+      src: '/audio/rainscars.mp3',
+    },
+    {
+      id: 'land-of-broken-dreams',
+      title: 'Land of Broken Dreams [Electronic Ambient]',
+      duration: '01:34',
+      src: '/audio/land-of-broken-dreams.mp3',
+    },
+    {
+      id: 'melancholy-dream',
+      title: 'Melancholy Dream [OST]',
+      duration: '03:06',
+      src: '/audio/melancholy-dream.mp3',
+    },
+    {
+      id: 'prologue',
+      title: 'Prologue [Cinematic Trailer]',
+      duration: '02:08',
+      src: '/audio/prologue.mp3',
+    },
+    {
+      id: 'garden-of-visions',
+      title: 'Garden of Visions [Ambient]',
+      duration: '01:25',
+      src: '/audio/garden-of-visions.mp3',
+    },
+  ],
+} as const
+
 export const contactCopy = {
   title: 'Contact',
   intro:

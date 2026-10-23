@@ -93,4 +93,58 @@
     line-height: 1.1;
     color: var(--color-wix-ink);
   }
+
+  .music-range {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 16px;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .music-range::-webkit-slider-runnable-track {
+    height: 4px;
+    border-radius: 999px;
+    background: linear-gradient(
+      to right,
+      var(--color-wix-ink) var(--music-progress, 0%),
+      #d5d0cc var(--music-progress, 0%)
+    );
+  }
+
+  .music-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    margin-top: -5px;
+    border-radius: 999px;
+    background: var(--color-wix-ink);
+    cursor: pointer;
+  }
+
+  .music-range::-moz-range-track {
+    height: 4px;
+    border: 0;
+    border-radius: 999px;
+    background: linear-gradient(
+      to right,
+      var(--color-wix-ink) var(--music-progress, 0%),
+      #d5d0cc var(--music-progress, 0%)
+    );
+  }
+
+  .music-range::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border: 0;
+    border-radius: 999px;
+    background: var(--color-wix-ink);
+    cursor: pointer;
+  }
+
+  .music-range:focus-visible::-webkit-slider-thumb {
+    outline: 2px solid var(--color-wix-ink);
+    outline-offset: 2px;
+  }
 }
