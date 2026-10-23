@@ -2,6 +2,23 @@
 
 Static personal portfolio for **Tanay Jain**, game audio designer. Built with Vite, React, TypeScript, Tailwind CSS, and shadcn/ui. Deploys to **GitHub Pages** with optional custom domain support.
 
+## GitHub repository
+
+Create a new repository on GitHub named **`tanay-portfolio`** under the **`tanay216`** account:
+
+**Suggested remote:** `https://github.com/tanay216/tanay-portfolio.git`
+
+To import from a bundle (offline transfer from Cursor):
+
+```bash
+git clone tanay-portfolio.bundle tanay-portfolio
+cd tanay-portfolio
+git remote add origin https://github.com/tanay216/tanay-portfolio.git
+git push -u origin main
+```
+
+Or push this working copy after adding that remote.
+
 ## Local development
 
 ```bash
