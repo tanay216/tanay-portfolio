@@ -29,9 +29,9 @@ jobs:
 
       - name: Build
         env:
-          # Project site: https://<user>.github.io/tanay-portfolio/
-          # Set the VITE_BASE_PATH repository variable to '/' for a custom domain or user site.
-          VITE_BASE_PATH: ${{ vars.VITE_BASE_PATH || '/tanay-portfolio/' }}
+          # Custom domain (tanayjain.com) serves from /. For the project URL only, set
+          # repository variable VITE_BASE_PATH to /tanay-portfolio/ in GitHub Actions.
+          VITE_BASE_PATH: ${{ vars.VITE_BASE_PATH || '/' }}
         run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
